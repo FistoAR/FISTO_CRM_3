@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "scripts": {
+    "dev": "concurrently \"npm run frontend\" \"npm run backend\"",
+    "frontend": "npm --prefix ./Frontend run dev",
+    "backend": "nodemon --cwd ./Backend server.js"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.11.0",
+    "bcrypt": "^6.0.0",
+    "multer": "^2.0.2",
+    "react-redux": "^9.2.0"
+  }
+}
